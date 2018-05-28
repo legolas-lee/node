@@ -1,0 +1,84 @@
+<!--html-->
+<div class="padding-20">
+    <h2>管理员信息</h2>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>字段</th>
+            <th>值</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>avatar</td>
+            <td><img src="{{adminData.avatar}}"</td>
+        </tr>
+        <tr>
+            <td>username</td>
+            <td ng-bind="adminData.username"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td ng-bind="adminData.password"></td>
+        </tr>
+        <tr>
+            <td>privilege</td>
+            <td ng-bind="adminData.privilege"></td>
+        </tr>
+        <tr>
+            <td>creat_time</td>
+            <td ng-bind="adminData.creat_time|date:'yyyy-MM-dd HH:mm:ss'"></td>
+        </tr>
+        <tr>
+            <td>last_login_time</td>
+            <td ng-bind="adminData.last_login_time|date:'yyyy-MM-dd HH:mm:ss'"></td>
+        </tr>
+        <tr>
+            <td>last_logout_time</td>
+            <td ng-bind="adminData.last_logout_time|date:'yyyy-MM-dd HH:mm:ss'"></td>
+        </tr>
+        <tr>
+            <td>last_login_ip</td>
+            <td ng-bind="adminData.last_login_ip"></td>
+        </tr>
+        <tr>
+            <td>realname</td>
+            <td ng-bind="adminData.realname"></td>
+        </tr>
+        <tr>
+            <td>sex</td>
+            <td ng-bind="adminData.sex"></td>
+        </tr>
+        <tr>
+            <td>bithday</td>
+            <td ng-bind="adminData.bithday|date:'yyyy-MM-dd'"></td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td ng-bind="adminData.tel"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td ng-bind="adminData.email"></td>
+        </tr>
+        <tr>
+            <td>qq</td>
+            <td ng-bind="adminData.qq"></td>
+        </tr>
+        <tr>
+            <td>wechat</td>
+            <td ng-bind="adminData.wechat"></td>
+        </tr>
+        <tr>
+            <td>address</td>
+            <td ng-bind="adminData.address"></td>
+        </tr>
+        <tr>
+            <td>homepage</td>
+            <td ng-bind="adminData.homepage"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--/html-->

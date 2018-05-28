@@ -1,0 +1,88 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+var debug = require('debug')('legolas:server');
+var http = require('http');
+const nodemailer = require('nodemailer');
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+var server = http.createServer(app);
+var io = app.io;
+io.attach( server );
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+//邮件服务
+var transporter=nodemailer.createTransport({
+    host: 'smtp.163.com',
+    port: 25,
+    secure: false, // true for 465, false for other ports
+    auth: {
+        user: 'nodecms@163.com', // generated ethereal user
+        pass: 'Whxhwjsgcp0704' // generated ethereal password
+    }
+});
+nodemailer.sendMails=function (to,subject,text) {
+    let mailOptions = {
+        from: 'nodecms@163.com',
+        to: to,
+        subject:subject,
+        text: text,
+        html: ''
+    };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('邮件发送成功: %s', JSON.stringify(info));
+        return info;
+    });
+};
+//nodemailer.sendMails('100001507@qq.com', '你好，这是一条服务器测试邮件！','收到此邮件就表示测试已成功');

@@ -1,0 +1,98 @@
+/*复用样式*/
+.progress{height: 2px;background-color: rgba(0, 0, 0, 0.28); }
+.progress .progress-bar{height:2px;background-color: #0090D9;border-radius: 3px;width: 0;}
+.user-info .admin-avatar{height: 42px;width: 42px;overflow: visible;position: relative;}
+.user-info .admin-avatar img{ width: 42px; height: 42px; border-radius: 100px;}
+.user-info .status{height: 12px;width: 12px;border: 2px solid #1b1e24;position: absolute;bottom: -5px;right: -2px;border-radius: 100px;}
+.user-info .online{background-color: #0aa699;}
+.user-info .info-text{display: inline-block;}
+.user-info .info-text .username{padding-top: 5px;}
+.user-info .info-text .level{color: #929fa5;font-size: 12px;}
+.dote-notice{height: 10px;width: 10px;display: block;border-radius: 99px;background-color: #f35958;position: absolute; }
+
+.table{ border-top: 1px solid #ddd;border-right: 1px solid #ddd; width: 100%; font-size: 12px;}
+.table td,.table th{ border-left:1px solid #ddd;border-bottom:1px solid #ddd; padding:8px 10px; vertical-align: middle}
+.table th{ background: #eee;}
+
+.button{ display: inline-block; background: #0090d9; color: white; padding: 7px 30px; border-radius: 6px; font-size: 14px;}
+
+
+/*页面布局*/
+main{width: 100%; height: 100%; position: relative;}
+.page-header{ height: 60px; position: fixed; top: 0; left: 250px;right:0; z-index: 998; }
+.page-left{ width: 250px;  position: fixed;  top:0; right:0; bottom:40px; left: 0; z-index: 999; }
+.page-row{  position: relative; margin-left:250px;}
+.page-main{ margin-top: 70px; margin-right: 260px; margin-left: 10px; margin-bottom: 50px; }
+.noticeOn.noticeWidth-normal .page-main{margin-right: 260px;}
+.noticeOn.noticeWidth-wide .page-main{margin-right: 360px;}
+.noticeOn.noticeWidth-maxwide .page-main{margin-right: 710px;}
+.page-right{ width: 250px;  position: fixed; right: 0; top:60px; bottom:40px; z-index:999;overflow: hidden;}
+.page-footer{ width: 100%; height: 40px; position: fixed; bottom: 0; left: 0; z-index: 999;  overflow: hidden;}
+.navOff .page-left{ width: 60px;}
+.navOff .page-row{ margin-left:60px;}
+.navOff .page-header{ left:60px;}
+.noticeOff .page-right{ width: 0;}
+.noticeOn.noticeWidth-normal .page-right{width: 250px;}
+.noticeOn.noticeWidth-wide .page-right{width: 350px;}
+.noticeOn.noticeWidth-maxwide .page-right{width: 700px;}
+.noticeOff .page-main{ margin-right: 10px;}
+.footbarOff .page-footer{ height: 0;}
+.footbarOff .page-left,.footbarOff .page-right{ bottom: 0;}
+.footbarOff .page-main{ margin-bottom: 10px;}
+.page-header,.page-left,.page-row,.page-main,.page-right,.page-footer{transition: all 0.4s ease-in-out;}
+/*页面样式*/
+.page-header{background: #fff; color: #7a7f8c;}
+.page-header a.icons{display: block; color: #7a7f8c; width: 40px; height: 40px; line-height: 44px; text-align: center; margin: 10px 0 10px 10px; position: relative;}
+.page-header a.icons:hover{ background: #eaeaea;}
+.page-header a i{ font-size: 24px;}
+.page-header .user-info{ line-height: 20px; float: right; margin-top: 5px}
+.page-header .user-info .status{border: 2px solid #fff;bottom: -2px;}
+.page-header a.icon-bind-message{ padding:0 10px;border-left: 1px solid #eaeaea;}
+.page-header a.icon-bind-message .dote-notice{right: 13px; top:22px;}
+
+.page-left{background:#1b1e24;color:white;}
+.page-left .nav-header{padding: 20px 0; background: #22262e;text-align: center; color:#0090D9}
+.page-left .user-info{margin: 15px 30px;}
+.page-left .user-info .admin-avatar{margin-right: 15px; float: left; }
+.page-left .nav dt{ position: relative;}
+.page-left .nav dt.current a{ color: white}
+.page-left .nav dt i.iconfont{ display: inline-block; height: 21px; line-height: 21px; font-size: 18px;}
+.page-left .nav dt>a{ display: block; color:#8b91a0; padding: 15px 30px; position: relative; }
+.page-left .nav dt>a span{ padding-left: 8px; font-size: 15px;}
+.page-left .nav dt>a:hover{ color: white;}
+.page-left .nav dt.navOpen>a{ color: white;}
+.page-left .nav dt.current>a,.page-left .nav dt ul li a.current{color: #0aa699;}
+.page-left .nav dt ul{ height: 0; overflow: hidden; background: #22262e}
+.page-left .nav dt.navOpen ul{height: auto;}
+.page-left .nav dt.submenuCloseAll ul{height: 0;}
+.page-left .nav dt ul li:first-child{ margin-top: 8px;}
+.page-left .nav dt ul li:last-child{ margin-bottom: 8px;}
+.page-left .nav dt ul li a{ display: block; color: #929fa5; padding: 8px 30px 8px 63px; font-size: 12px; position: relative;}
+.page-left .nav dt ul li a:hover{ background: #1b1e24;color: #e1eaf1;}
+.page-left .nav dt ul li a strong.notice{background-color: #0090d9; display: inline-block; padding: 0 15px; color: white; border-radius: 4px; float: right; font-size: 12px; font-weight: normal;}
+.page-left .nav .more{position: absolute; right: 35px; top:21px; font-size: 10px!important;}
+.page-left .nav .dote-notice{right: 60px; top:22px;}
+.page-left .server-info{position: absolute;bottom: 0px;left: 0;background-color: #22262e;width: 84%; padding:11px 8%;clear: both;}
+.page-left .server-info .progress{ width: 62%; float: left; margin-top: 12px;}
+.page-left .server-info .right{float: right; position: relative; text-align: right;}
+.page-left .server-info .right .details-status {background-color: #2d3139;border-radius: 3px 3px 3px 3px;color: #8B91A0;display: inline-block;font-size: 11px;padding: 6px;left:-10px;position: relative;}
+.page-left .server-info .right a{ color: #5e646d;}
+/*导航最小化样式*/
+.navOff .page-left .nav-header{ font-size: 13px;}
+.navOff .page-left .user-info{ margin: 0; display: none;}
+.navOff .nav .more{ display: none;}
+.navOff .nav .dote-notice{right: 18px; top:34px;}
+.navOff .nav dt>a{ padding-left: 17px; font-size:22px; color: #ccc;}
+.navOff .nav dt.navOpen>a{ background: #333;}
+.navOff .nav dt>a:hover{ background: #000;}
+.navOff .nav dt>a span{ padding: 0; display: none;}
+.navOff .nav dt ul{ position: absolute; width: 200px; left: 60px; top:0;}
+.navOff  .nav dt ul li a{ padding: 10px 30px;}
+
+.page-main{background: #fff;}
+.page-right{background: #1b1e24;color:white; }
+.page-right .infoBox{ background:#2d3139; height: 300px; padding: 10px; border-radius: 6px; font-size: 13px;}
+.page-right .inputBox textarea{width:210px; padding:10px;border-radius: 6px; margin: 10px 0; border: 0; background: #2d3139; color: white;}
+.noticeBackground-dark .page-right{ background: #1b1e24}
+.noticeBackground-bright .page-right{ background: #fff; border-top: 1px solid #e5e9ec}
+.page-footer{background: #2d3139;color:white; text-align: center;}

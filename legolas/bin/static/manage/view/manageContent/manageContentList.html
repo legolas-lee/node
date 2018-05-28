@@ -1,0 +1,123 @@
+<div class="padding-20">
+    内容管理
+    <hr>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>图片</th>
+            <th width="200">标题</th>
+            <th>星级</th>
+            <th>更新时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in contentList">
+            <td class="t-align-center"><img ng-src="{{item.pic}}" width="40"> </td>
+            <td><a ng-bind="item.title"></a></td>
+            <td class="t-align-center" ng-bind="item.star"></td>
+            <td class="t-align-center" ng-bind="item.update_time|date:'MM-dd HH:mm'"></td>
+            <td class="t-align-center"><a ng-click="getContentDetail(item.ID)">修改</a><a class="m-l-10" ng-click="delContent(item.ID)">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    修改内容
+    <hr>
+    <table class="table">
+        <tr>
+            <td class="t-align-right p-r-10">标题</td>
+            <td><input class="input-long" ng-model="contentDetail.title" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">副标题</td>
+            <td><input class="input-long" ng-model="contentDetail.title_extra" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">图片</td>
+            <td>
+                <img ng-if="contentDetail.pic" ng-src="{{contentDetail.pic}}" width="60">
+                <input type="file" id="picToUpload">
+            </td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10 v-align-top">描述</td>
+            <td><textarea class="input-long width-percent-94" rows="3" ng-model="contentDetail.content_desc" placeholder="请输入内容"></textarea></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">作者</td>
+            <td><input class="input-long" ng-model="contentDetail.author" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">星级</td>
+            <td><input class="input-long" ng-model="contentDetail.star" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10 v-align-top">正文</td>
+            <td><textarea class="input-long width-percent-94" rows="10" ng-model="contentDetail.content" placeholder="请输入内容"></textarea></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">外链</td>
+            <td><input class="input-long" ng-model="contentDetail.outlink" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">点赞</td>
+            <td><input class="input-long" ng-model="contentDetail.likes" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">浏览量</td>
+            <td><input class="input-long" ng-model="contentDetail.view" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-center" colspan="2"><a class="button" ng-click="updateContent(contentDetail.ID)">更新</a></td>
+        </tr>
+    </table>
+    <hr>
+    添加内容
+    <hr>
+    <table class="table">
+        <tr>
+            <td class="t-align-right p-r-10">标题</td>
+            <td><input class="input-long" ng-model="toadd.title" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">副标题</td>
+            <td><input class="input-long" ng-model="toadd.title_extra" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">图片</td>
+            <td><input type="file" id="pic"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10 v-align-top">描述</td>
+            <td><textarea class="input-long width-percent-94" rows="3" ng-model="toadd.content_desc" placeholder="请输入内容"></textarea></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">作者</td>
+            <td><input class="input-long" ng-model="toadd.author" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">星级</td>
+            <td><input class="input-long" ng-model="toadd.star" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10 v-align-top">正文</td>
+            <td><textarea class="input-long width-percent-94" rows="10" ng-model="toadd.content" placeholder="请输入内容"></textarea></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">外链</td>
+            <td><input class="input-long" ng-model="toadd.outlink" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">点赞</td>
+            <td><input class="input-long" ng-model="toadd.likes" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-right p-r-10">浏览量</td>
+            <td><input class="input-long" ng-model="toadd.view" placeholder="请输入内容"></td>
+        </tr>
+        <tr>
+            <td class="t-align-center" colspan="2"><a class="button" ng-click="addContent()">添加</a></td>
+        </tr>
+    </table>
+</div>

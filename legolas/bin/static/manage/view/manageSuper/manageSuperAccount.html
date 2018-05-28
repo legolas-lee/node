@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="padding-20">
+    账号列表
+    <hr/>
+    <table class="table t-align-center">
+        <thead>
+        <tr>
+            <th>头像</th>
+            <th>账户名</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in listData">
+            <td><div class="user-info display-ib"><div class="admin-avatar"><img ng-src="{{item.avatar}}"></div></div></td>
+            <td><a ui-sref="manageSuperAccountInfo({id:item.id})" ng-bind="item.username"></a></td>
+            <td><a ng-click="queryAccount(item.id)">修改</a> <a ng-click="delAccount(item.id)">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    账号修改
+    <hr>
+    <table class="table">
+        <thead>
+            <tr>
+                <th width="150">字段</th>
+                <th>值</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>avatar</td>
+            <td>
+                <img ng-src="{{currentData.avatar}}">
+                <input class="input-long" type="file" id="resetAvatar" name="avatar"></td>
+        </tr>
+        <tr>
+            <td>username</td>
+            <td><input class="input-long" type="text" ng-model="currentData.username" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input class="input-long" type="password" ng-model="currentData.password" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>privilege</td>
+            <td><input class="input-long" type="text" ng-model="currentData.privilege" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>creat_time</td>
+            <td><input class="input-long" type="text" ng-model="currentData.creat_time" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>last_login_time</td>
+            <td><input class="input-long" type="text" ng-model="currentData.last_login_time" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>last_logout_time</td>
+            <td><input class="input-long" type="text" ng-model="currentData.last_logout_time" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>last_login_ip</td>
+            <td><input class="input-long" type="text" ng-model="currentData.last_login_ip" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>realname</td>
+            <td><input class="input-long" type="text" ng-model="currentData.realname" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>sex</td>
+            <td><input class="input-long" type="text" ng-model="currentData.sex" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>bithday</td>
+            <td><input class="input-long" type="text" ng-model="currentData.bithday" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td><input class="input-long" type="text" ng-model="currentData.tel" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input class="input-long" type="text" ng-model="currentData.email" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>qq</td>
+            <td><input class="input-long" type="text" ng-model="currentData.qq" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>wechat</td>
+            <td><input class="input-long" type="text" ng-model="currentData.wechat" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>address</td>
+            <td><input class="input-long" type="text" ng-model="currentData.address" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>homepage</td>
+            <td><input class="input-long" type="text" ng-model="currentData.homepage" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="t-align-center"><a class="button m-t-20 m-b-20" ng-click="updateAccount(currentData.ID)"><i class="fa fa-plus m-r-5"></i>更新</a></td>
+        </tr>
+    </table>
+    <hr>
+    账号添加
+    <hr>
+    <table class="table">
+        <thead>
+        <tr>
+            <th width="150">字段</th>
+            <th>值</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>avatar</td>
+            <td><input class="input-long" type="file" id="avatar" name="avatar"></td>
+        </tr>
+        <tr>
+            <td>username</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.username" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input class="input-long" type="password" ng-model="dataToAdd.password" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>privilege</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.privilege" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>creat_time</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.creat_time" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>last_login_time</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.last_login_time" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>last_logout_time</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.last_logout_time" placeholder="请添加信息"></td>
+        </tr>
+        <tr ng-hide="1">
+            <td>last_login_ip</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.last_login_ip" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>realname</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.realname" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>sex</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.sex" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>bithday</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.bithday" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.tel" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.email" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>qq</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.qq" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>wechat</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.wechat" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>address</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.address" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td>homepage</td>
+            <td><input class="input-long" type="text" ng-model="dataToAdd.homepage" placeholder="请添加信息"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="t-align-center"><a class="button m-t-20 m-b-20" ng-click="addAccount()"><i class="fa fa-plus m-r-5"></i>添加</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

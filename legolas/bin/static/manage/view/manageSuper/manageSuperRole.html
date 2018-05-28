@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="padding-20">
+    <h2>角色管理</h2>
+    <hr/>
+    <table width="100%" class="table t-align-center">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>角色名称</th>
+            <th>权限级别</th>
+            <th>授权操作</th>
+            <th>包含账户</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in roleList">
+                <td ng-bind="item.ID"></td>
+                <td><input class="input-long" type="text" ng-model="item.name"></td>
+                <td><input class="input-long" type="text" ng-model="item.level"> </td>
+                <td>暂无</td>
+                <td ng-bind="item.accounts"></td>
+                <td><a ng-click="saveThis(item)">修改</a> <a>删除</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h4/>
+</div>
+</body>
+</html>
