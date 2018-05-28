@@ -5,19 +5,12 @@
  * Created by kreta on 2018/5/26.
  */
 const express=require('express');
-const mysql=require('mysql');
+const db=require('./MySQL');
 const multer=require('multer');
 const multerObj=multer({dest: './static/public/upload/content'});
 const bodyParser=require('body-parser');
 const pathLib=require('path');
 const fs=require('fs')
-
-var db=mysql.createPool({
-    host:'localhost',
-    user:'root',
-    password:'whxhwjsgcp',
-    database:'node'
-});
 var returnAdminRouter = function(io) {
     var router=express.Router();
     router.use(multerObj.any());
