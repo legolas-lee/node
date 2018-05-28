@@ -327,7 +327,7 @@ app.controller('parent',function($scope,$http) {
             })
     }
     //socket
-    var socket = io.connect(transUrl(null));
+    var socket = io.connect(transUrl(''));
     $scope.socketText='';
     $scope.socketSend=function () {
         socket.emit('chat message',{'user':$scope.me.data.username,'msg':$scope.socketText});
