@@ -1,7 +1,7 @@
 /**
  * Created by kreta on 2018/5/19.
  */
-var app=angular.module('myApp',['ui.router','oc.lazyLoad']);
+var app=angular.module('myApp',['ui.router','oc.lazyLoad','ionic']);
 var release=false //false为内网访问，true为外网访问
 function transUrl(url) {
     if(release){return 'http://kretaslee.asuscomm.com:3000/'+url;}
@@ -12,6 +12,47 @@ function  getCurrentTime() {
     return(date.getTime())
 }
 getCurrentTime();
+app.directive('moduleBox', ['$timeout', function () {
+    return{
+        restrict: 'E',
+        scope: false,
+        link: function (scope,element,attr) {
+            $(element).hide();
+            $(document).on("click",function(e){
+                if($(e.target).parents(".module-content-bg").length == 0&&$(e.target).hasClass("module-btn")==false){
+                    $(element).hide();
+                }
+            });
+            scope.moduleClose=function (id) {
+                $('#'+id).hide()
+            }
+            scope.moduleOpen=function (id,width) {
+                var moduleBox=$('#'+id);
+                moduleBox.show();
+                scope.moduleWidth=moduleBox.find(".module-content").width();
+                scope.moduleHeight=moduleBox.find(".module-content").height();
+                if(width){
+                    if(width==100){
+                        scope.boxStyle="left:0; top:0; margin:0; width:100%; height:100%"
+                    }
+                    else{
+                        scope.boxStyle="left:"+(100-width)/2+"%; width:"+width+"%;top:50%; margin-top: -"+scope.moduleHeight/2+"px"
+                    }
+                }
+                else{
+                    scope.boxStyle="left:50%; margin-left: -"+parseInt(scope.moduleWidth)/2+"px; top:50%; margin-top: -"+scope.moduleHeight/2+"px";
+                }
+            }
+        },
+        transclude: true,
+        template:
+        '<div class="module-content-bg css-animate-slow fadeIn">' +
+        '<div class="module-content padding" style={{boxStyle}}>{{moduleWidth}},{{moduleHeight}}' +
+        '<div ng-transclude></div>' +
+        '</div>' +
+        '</div>'
+    }
+}]);
 //路由设置
 app.config(function ($stateProvider, $urlRouterProvider,$httpProvider,$locationProvider) {
     // $httpProvider.defaults.transformRequest = function(obj){
@@ -143,7 +184,26 @@ app.config(function ($stateProvider, $urlRouterProvider,$httpProvider,$locationP
         })
 });
 //父级模块
-app.controller('parent',function($scope,$http) {
+app.controller('parent',function($scope,$http,$window) {
+//全局模态框处理
+    $scope.modelClose=function (modelname) {
+        alert($scope.addRoleDisplay)
+        $scope[modelname+'Display']=false;
+        alert($scope.addRoleDisplay)
+    }
+    //Resize处理
+    var w = angular.element($window);
+    $scope.widowInfo={}
+    function getWindowInfo() {
+        $scope.widowInfo.width=$window.innerWidth;
+        $scope.widowInfo.height=$window.innerHeight;
+        $scope.widowInfo.scrolltTp=$window.scroll.scrollTop;
+    }
+    getWindowInfo();
+    w.bind('resize', function(){
+        getWindowInfo();
+        console.log($scope.widowInfo)
+    })
     //登录用户变量
     $scope.me={ID:0}
     //获取个人信息
@@ -170,7 +230,7 @@ app.controller('parent',function($scope,$http) {
             console.log(res)
         })
 
-    $scope.pageClass=['navOn','footbarOn','noticeOn','noticeWidth-normal','noticeBackground-dark']
+    $scope.pageClass=['navOn','footbarOn','noticeOff','noticeWidth-normal','noticeBackground-dark']
     //模块状态变化
     $scope.togglePageClass=function(type,addOn){
         if(addOn){

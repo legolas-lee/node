@@ -2,7 +2,7 @@
  * Created by kreta on 2018/5/23.
  */
 //超级管理-角色管理
-angular.module('myApp').controller('manageSuperRole',function ($scope,$http) {
+angular.module('myApp',['ionic']).controller('manageSuperRole',function ($scope,$http,$ionicModal) {
     $scope.$emit('navState', {parrent:'manageSuper',current:'manageSuperRole'});
     function refreshList() {
         $http.get(transUrl('Accounts/getRoleList'),{params:{}})
@@ -24,4 +24,9 @@ angular.module('myApp').controller('manageSuperRole',function ($scope,$http) {
                 console.log(res)
             })
     }
+    //模态
+    $scope.addRole=function () {
+        //$scope.modelAddRole=true;
+    }
+
 })

@@ -1,3 +1,4 @@
+body{background: #e5e9ec;}
 /*复用样式*/
 .progress{height: 2px;background-color: rgba(0, 0, 0, 0.28); }
 .progress .progress-bar{height:2px;background-color: #0090D9;border-radius: 3px;width: 0;}
@@ -14,8 +15,6 @@
 .table td,.table th{ border-left:1px solid #ddd;border-bottom:1px solid #ddd; padding:8px 10px; vertical-align: middle}
 .table th{ background: #eee;}
 
-.button{ display: inline-block; background: #0090d9; color: white; padding: 7px 30px; border-radius: 6px; font-size: 14px;}
-
 
 /*页面布局*/
 main{width: 100%; height: 100%; position: relative;}
@@ -26,7 +25,7 @@ main{width: 100%; height: 100%; position: relative;}
 .noticeOn.noticeWidth-normal .page-main{margin-right: 260px;}
 .noticeOn.noticeWidth-wide .page-main{margin-right: 360px;}
 .noticeOn.noticeWidth-maxwide .page-main{margin-right: 710px;}
-.page-right{ width: 250px;  position: fixed; right: 0; top:60px; bottom:40px; z-index:999;overflow: hidden;}
+.page-right{ width: 250px;  position: fixed; right: 0; top:60px; bottom:40px; z-index:999;overflow-x: hidden;}
 .page-footer{ width: 100%; height: 40px; position: fixed; bottom: 0; left: 0; z-index: 999;  overflow: hidden;}
 .navOff .page-left{ width: 60px;}
 .navOff .page-row{ margin-left:60px;}
@@ -54,6 +53,7 @@ main{width: 100%; height: 100%; position: relative;}
 .page-left .nav-header{padding: 20px 0; background: #22262e;text-align: center; color:#0090D9}
 .page-left .user-info{margin: 15px 30px;}
 .page-left .user-info .admin-avatar{margin-right: 15px; float: left; }
+.page-left .nav a{-webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
 .page-left .nav dt{ position: relative;}
 .page-left .nav dt.current a{ color: white}
 .page-left .nav dt i.iconfont{ display: inline-block; height: 21px; line-height: 21px; font-size: 18px;}
@@ -62,7 +62,7 @@ main{width: 100%; height: 100%; position: relative;}
 .page-left .nav dt>a:hover{ color: white;}
 .page-left .nav dt.navOpen>a{ color: white;}
 .page-left .nav dt.current>a,.page-left .nav dt ul li a.current{color: #0aa699;}
-.page-left .nav dt ul{ height: 0; overflow: hidden; background: #22262e}
+.page-left .nav dt ul{ height: 0; overflow: hidden; background: #22262e;}
 .page-left .nav dt.navOpen ul{height: auto;}
 .page-left .nav dt.submenuCloseAll ul{height: 0;}
 .page-left .nav dt ul li:first-child{ margin-top: 8px;}
@@ -72,11 +72,12 @@ main{width: 100%; height: 100%; position: relative;}
 .page-left .nav dt ul li a strong.notice{background-color: #0090d9; display: inline-block; padding: 0 15px; color: white; border-radius: 4px; float: right; font-size: 12px; font-weight: normal;}
 .page-left .nav .more{position: absolute; right: 35px; top:21px; font-size: 10px!important;}
 .page-left .nav .dote-notice{right: 60px; top:22px;}
-.page-left .server-info{position: absolute;bottom: 0px;left: 0;background-color: #22262e;width: 84%; padding:11px 8%;clear: both;}
+.page-left .server-info{position: absolute;bottom: 0px;left: 0;background-color: #22262e;width: 100%; padding:11px 8%;clear: both;}
 .page-left .server-info .progress{ width: 62%; float: left; margin-top: 12px;}
 .page-left .server-info .right{float: right; position: relative; text-align: right;}
 .page-left .server-info .right .details-status {background-color: #2d3139;border-radius: 3px 3px 3px 3px;color: #8B91A0;display: inline-block;font-size: 11px;padding: 6px;left:-10px;position: relative;}
 .page-left .server-info .right a{ color: #5e646d;}
+
 /*导航最小化样式*/
 .navOff .page-left .nav-header{ font-size: 13px;}
 .navOff .page-left .user-info{ margin: 0; display: none;}
@@ -89,10 +90,14 @@ main{width: 100%; height: 100%; position: relative;}
 .navOff .nav dt ul{ position: absolute; width: 200px; left: 60px; top:0;}
 .navOff  .nav dt ul li a{ padding: 10px 30px;}
 
-.page-main{background: #fff;}
+.page-main{background: #fff;  position: relative;}
 .page-right{background: #1b1e24;color:white; }
 .page-right .infoBox{ background:#2d3139; height: 300px; padding: 10px; border-radius: 6px; font-size: 13px;}
 .page-right .inputBox textarea{width:210px; padding:10px;border-radius: 6px; margin: 10px 0; border: 0; background: #2d3139; color: white;}
 .noticeBackground-dark .page-right{ background: #1b1e24}
 .noticeBackground-bright .page-right{ background: #fff; border-top: 1px solid #e5e9ec}
 .page-footer{background: #2d3139;color:white; text-align: center;}
+
+/*模态*/
+.module-content-bg{position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.7)}
+.module-content{position: absolute;background: white;}

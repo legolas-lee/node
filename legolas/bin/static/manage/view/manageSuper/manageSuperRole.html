@@ -1,36 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<div class="padding-20">
-    <h2>角色管理</h2>
-    <hr/>
-    <table width="100%" class="table t-align-center">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>角色名称</th>
-            <th>权限级别</th>
-            <th>授权操作</th>
-            <th>包含账户</th>
-            <th>操作</th>
-        </tr>
-        </thead>
-        <tbody>
+<div class="padding-10">
+    <div class="row row-center">
+        <div class="col col-75"><h4><i class="icon ion-person-stalker"></i> 角色管理</h4></div>
+        <div class="col t-align-right"><button ng-click="moduleOpen('addRole',70)" class="button button-balanced button-small ion-plus module-btn"> 添加角色</button></div>
+    </div>
+    <div class="row">
+        <table width="100%" class="table t-align-center">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>角色名称</th>
+                <th>权限级别</th>
+                <th>授权操作</th>
+                <th>包含账户</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
             <tr ng-repeat="item in roleList">
                 <td ng-bind="item.ID"></td>
-                <td><input class="input-long" type="text" ng-model="item.name"></td>
-                <td><input class="input-long" type="text" ng-model="item.level"> </td>
+                <td><input class="input-full" type="text" ng-model="item.name"></td>
+                <td><input class="input-full" type="text" ng-model="item.level"> </td>
                 <td>暂无</td>
                 <td ng-bind="item.accounts"></td>
                 <td><a ng-click="saveThis(item)">修改</a> <a>删除</a></td>
             </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<module-box id="addRole">
+    <div class="model-head t-align-center"><h3>添加角色111</h3></div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>字段</th>
+            <th>值</th>
+            <th>说明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>角色名称</td>
+            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>权限级别</td>
+            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>授权操作</td>
+            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+            <td></td>
+        </tr>
         </tbody>
     </table>
-    <h4/>
-</div>
-</body>
-</html>
+    <a class="icon-cancel" ng-click="moduleClose('addRole')"><i class="icon ion-close"></i></a>
+</module-box>
+<module-box id="addRole2" class="aaaaaaaaaa">
+    <div class="model-head t-align-center"><h3>添加角色222</h3></div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>字段</th>
+            <th>值</th>
+            <th>说明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>角色名称</td>
+            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>权限级别</td>
+            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>授权操作</td>
+            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="icon-cancel" ng-click="moduleClose('addRole2')"><i class="icon ion-close"></i></a>
+</module-box>
