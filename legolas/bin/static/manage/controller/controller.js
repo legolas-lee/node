@@ -185,12 +185,6 @@ app.config(function ($stateProvider, $urlRouterProvider,$httpProvider,$locationP
 });
 //父级模块
 app.controller('parent',function($scope,$http,$window) {
-//全局模态框处理
-    $scope.modelClose=function (modelname) {
-        alert($scope.addRoleDisplay)
-        $scope[modelname+'Display']=false;
-        alert($scope.addRoleDisplay)
-    }
     //Resize处理
     var w = angular.element($window);
     $scope.widowInfo={}
@@ -226,11 +220,11 @@ app.controller('parent',function($scope,$http,$window) {
             $scope.memo.total=res.data.data.totalmem.value;
             $scope.memo.used=(res.data.data.freemem.extra/res.data.data.totalmem.extra*100).toFixed(2);
         },function (res) {
-            console.log('服务器通信失败')
+            console.log('服务器通信出错,获取服务器信息失败')
             console.log(res)
         })
 
-    $scope.pageClass=['navOn','footbarOn','noticeOff','noticeWidth-normal','noticeBackground-dark']
+    $scope.pageClass=['navOn','footbarOn','noticeOn','noticeWidth-normal','noticeBackground-dark']
     //模块状态变化
     $scope.togglePageClass=function(type,addOn){
         if(addOn){

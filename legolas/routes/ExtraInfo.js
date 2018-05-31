@@ -15,6 +15,10 @@ module.exports=function (io) {
         var minutes = Math.floor((time - days * 1440 * 60 - hours * 3600) / 60);
         var seconds = (time - days * 1440 * 60 - hours * 3600 - minutes *60).toFixed(0);
         var newtime=days+' 年 '+hours+' 小时 '+minutes+' 分 '+seconds+' 秒 ';
+        var freemem=os.freemem();
+        var gb=parseInt(os.freemem() / 1024 / 1024 / 1024);
+        var mb=parseInt((freemem-(gb*1024*1024*1024))/1024/1024);
+        var newfreemem=gb+'GB '+mb+'MB';
         var serverInfo= {
             "title": "服务器信息",
             "data": {
@@ -50,7 +54,7 @@ module.exports=function (io) {
                 },
                 freemem: {
                     "text_name": "系统空闲内存",
-                    "value": (os.freemem() / 1024 / 1024 / 1024).toFixed(2) + ' GB',
+                    "value": newfreemem,
                     "describe": "",
                     "extra": os.freemem()
                 },
@@ -122,7 +126,7 @@ module.exports=function (io) {
                 }
             }
         };
-        res.send(serverInfo).end();
+        res.send(serverInfo)
     })
     return router;
 }

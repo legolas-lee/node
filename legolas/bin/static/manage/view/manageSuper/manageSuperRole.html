@@ -1,32 +1,25 @@
-<div class="padding-10">
-    <div class="row row-center">
-        <div class="col col-75"><h4><i class="icon ion-person-stalker"></i> 角色管理</h4></div>
-        <div class="col t-align-right"><button ng-click="moduleOpen('addRole',70)" class="button button-balanced button-small ion-plus module-btn"> 添加角色</button></div>
+<div class="bar bar-header bar-stable">
+    <button class="button button-icon icon ion-ios-arrow-back" ng-click="goBack()"></button>
+    <div class="title">角色管理</div>
+    <button ng-click="moduleOpen('addRole',50)"  class="button button-balanced  ion-plus module-btn"> 添加角色</button>
+</div>
+<div class="content has-header">
+<div class="row">
+    <div class="col" ng-repeat="item in roleList">
+        <div class="card-style-account">
+            <div class="float t-align-right"><a ng-click="delRole(item.ID)" class="light"><i class="fa fa-user-alt-slash"></i> 删除角色</a></div>
+            <span class="avatar"><i class="{{item.icon}}"></i></span>
+            <h3 ng-bind="item.name"></h3>
+            <span class="desc" ng-bind="item.describe"></span>
+            <ul>
+                <li class="text">包含用户：{{item.accounts}}</li>
+                <li class="text">授权操作: {{item.privilege}}</li>
+            </ul>
+            <div class="line"></div>
+            <div class="operate"><button class="button button-full button-stable ion-edit" ng-click="editRole(item.ID)"> 修改</button></div>
+        </div>
     </div>
-    <div class="row">
-        <table width="100%" class="table t-align-center">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>角色名称</th>
-                <th>权限级别</th>
-                <th>授权操作</th>
-                <th>包含账户</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="item in roleList">
-                <td ng-bind="item.ID"></td>
-                <td><input class="input-full" type="text" ng-model="item.name"></td>
-                <td><input class="input-full" type="text" ng-model="item.level"> </td>
-                <td>暂无</td>
-                <td ng-bind="item.accounts"></td>
-                <td><a ng-click="saveThis(item)">修改</a> <a>删除</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+</div>
 </div>
 <module-box id="addRole">
     <div class="model-head t-align-center"><h3>添加角色111</h3></div>

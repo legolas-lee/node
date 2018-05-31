@@ -1,3 +1,22 @@
+<div class="bar bar-header bar-stable">
+    <button class="button button-icon icon ion-ios-arrow-back" ng-click="goBack()"></button>
+    <div class="title">账号管理</div>
+    <button ng-click="moduleOpen('addRole',50)"  class="button button-balanced  ion-plus module-btn"> 添加账号</button>
+</div>
+<div class="content has-header">
+    <div class="row">
+        <div class="col" ng-repeat="item in listData">
+            <div class="card-style-account accounthack">
+                <div class="float t-align-right"><a ng-click="delAccount(item.id)" class="light"><i class="fa fa-user-alt-slash"></i> 删除角色</a></div>
+                <span class="avatar"><img ng-src="{{item.avatar}}"></span>
+                <h3>{{item.username}} <i ng-if="item.sex==1" class="fa fa-venus"></i><i ng-if="item.sex==2" class="fa fa-mars"></i> </h3>
+                <span class="desc">上次登录：{{item.last_login_time|date:"yyyy-MM-dd HH:mm:ss"}}</span>
+                <div class="line"></div>
+                <div class="operate"><button class="button button-full button-stable ion-edit" ng-click="queryAccount(item.id)"> 修改</button></div>
+            </div>
+        </div>
+    </div>
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +37,9 @@
         </thead>
         <tbody>
         <tr ng-repeat="item in listData">
-            <td><div class="user-info display-ib"><div class="admin-avatar"><img ng-src="{{item.avatar}}"></div></div></td>
-            <td><a ui-sref="manageSuperAccountInfo({id:item.id})" ng-bind="item.username"></a></td>
-            <td><a ng-click="queryAccount(item.id)">修改</a> <a ng-click="delAccount(item.id)">删除</a></td>
+            <td><div class="user-info display-ib"><div class="admin-avatar"></div></div></td>
+            <td><a ui-sref="manageSuperAccountInfo({id:item.id})" ng-bind=""></a></td>
+            <td><a ng-click="">修改</a> <a ng-click="">删除</a></td>
         </tr>
         </tbody>
     </table>

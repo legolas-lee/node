@@ -2,11 +2,25 @@
 html,body{ overflow: visible!important;}
 .button-small {padding: 2px 8px 1px;}
 html body * .item-input input{ border: 0!important;}
+html body * .row{ padding: 5px 0px;}
+html body * .row .col:first-child{ padding-left: 0;}
+html body * .row .col:last-child{ padding-right: 0;}
 /*基于ionic的样式改进*/
 html body .navOn .modal-width-40{ width: 40%;top: 20%;left: 40%;min-height: 240px;}
 html body * span{ font-weight: normal;}
+html body * .bar{ height: 48px;}
+.button{transition: background 0.2s linear 0s}
+.button-stable:hover{ background: #eaeaea;}
+.button-positive:hover{ background: #205bc0;}
+.button-calm:hover{ background: #098cb1;}
+.button-balanced:hover{ background: #1ba242;}
+.button-energized:hover{ background: #ff9600;}
+.button-assertive:hover{ background: #b12b21;}
+.button-royal:hover{ background: #5e44b4;}
+.button-dark:hover{ background: #333;}
+
 /*resource*/
-a{ text-decoration: none;}
+a{ text-decoration: none; cursor: pointer;}
 .text-overflow{white-space:nowrap; text-overflow:ellipsis;  overflow:hidden }
 .show{display:block;}
 .hide{display: none;}
@@ -18,11 +32,11 @@ a{ text-decoration: none;}
 .scrollbar::-webkit-scrollbar-track{width:4px;background-color: #1b1e24;}
 .scrollbar::-webkit-scrollbar-thumb{width: 6px; background-color: rgb(161, 178, 189);}
 .wrap{word-break:break-all; word-wrap:break-word;}
-.float-left{ float: left;}
-.float-right{ float: right;}
-.t-align-left{ text-align:left;}
-.t-align-right{text-align:right;}
-.t-align-center{text-align:center;}
+.float-left{ float: left!important;}
+.float-right{ float: right!important;}
+.t-align-left{ text-align:left!important;}
+.t-align-right{text-align:right!important;}
+.t-align-center{text-align:center!important;}
 .h-align-middle{margin-left: auto; margin-right: auto; display: table;}
 .v-align-bottom{vertical-align: bottom!important; display: table-cell;}
 .v-align-top{vertical-align: top!important; display: table-cell;}

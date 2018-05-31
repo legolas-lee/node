@@ -18,7 +18,7 @@
   </head>
   <body ng-controller="parent"  ng-class="pageClass">
     <main>
-        <div class="page-left">
+        <div class="page-left scrollbar">
             <div class="nav-header">
                 <strong class="text-center">LeGolas Node CMS</strong>
             </div>
@@ -73,10 +73,10 @@
                     </div>
                 </div>
             </div>
-            <div class="page-main " style="height:{{widowInfo.height-60-40-20}}px" ui-view></div>
+            <div class="page-main" style="min-height:{{widowInfo.height-60-40-20}}px" ui-view></div>
             <div class="page-right scrollbar">
                 <div class="padding-10">
-                    <div class="infoBox">
+                    <div class="infoBox scrollbar">
                         <ul>
                             <li ng-repeat="item in infoBox track by $index">{{item.user}}：{{item.msg}}</li>
                         </ul>

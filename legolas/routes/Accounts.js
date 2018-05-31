@@ -54,6 +54,8 @@ var returnAdminRouter = function(io) {
                     j.id=data[i].ID;
                     j.avatar=data[i].avatar;
                     j.username=data[i].username;
+                    j.sex=data[i].sex;
+                    j.last_login_time=data[i].last_login_time;
                     dataToSend.push(j);
                 }
                 res.send(dataToSend)
