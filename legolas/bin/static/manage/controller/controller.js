@@ -47,7 +47,7 @@ app.directive('moduleBox', ['$timeout', function () {
         transclude: true,
         template:
         '<div class="module-content-bg css-animate-slow fadeIn">' +
-        '<div class="module-content padding" style={{boxStyle}}>{{moduleWidth}},{{moduleHeight}}' +
+        '<div class="module-content padding" style={{boxStyle}}>' +
         '<div ng-transclude></div>' +
         '</div>' +
         '</div>'

@@ -57,6 +57,8 @@ angular.module('myApp').controller('manageSuperAccount',function ($scope,$http) 
         $http.get(transUrl('Accounts/getAccountInfo'), dataToSend)
             .then(function (res) {
                 $scope.currentData = res.data[0];
+                $scope.moduleOpen('updateAccount',80)
+                console.log($scope.currentData)
             }, function (res) {
                 console.log('服务器通信失败')
                 console.log(res)
@@ -72,7 +74,8 @@ angular.module('myApp').controller('manageSuperAccount',function ($scope,$http) 
         formData.append('data',JSON.stringify($scope.currentData));
         $http.post(transUrl('Accounts/updateAccount'),formData,{headers: {'Content-Type': undefined}})
             .then(function (res) {
-                alert("修改成功")
+                alert("修改成功");
+                $scope.moduleClose('updateAccount');
                 refreshList();
             },function (res) {
                 console.log(res)
