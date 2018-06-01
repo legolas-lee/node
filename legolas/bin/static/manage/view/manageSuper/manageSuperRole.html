@@ -1,13 +1,13 @@
 <md-toolbar class="page-toobar">
     <div layout="row">
         <md-toolbar-filler layout="row" layout-align="center center">
-            <i class="fa fa-user-cog"></i>
+            <i class="material-icons">folder_shared</i>
         </md-toolbar-filler>
         <h2 class="md-toolbar-tools">
-            <a class="back"><i class="material-icons">face</i> </a><span>角色管理</span><small>/ account role management</small>
+            <a class="back"><i class="material-icons">chevron_left</i> </a><span>角色管理</span><small>/ account role management</small>
         </h2>
         <div class="buttons">
-            <button class="btn btn-success module-btn" ng-click="moduleOpen('addRole',50)"><i class="material-icons">add</i> 添加角色</button>
+            <button class="btn btn-success module-btn" ng-click="moduleOpen('addRole',50)"><i class="fa fa-user-plus"></i> 添加角色</button><button class="btn btn-default" ng-click="showAdvanced($event)">测试</button>
         </div>
     </div>
 </md-toolbar>
@@ -33,34 +33,7 @@
 
 
 <module-box id="addRole">
-    <div class="model-head t-align-center"><h3>添加角色111</h3></div>
-    <table class="table">
-        <thead>
-        <tr>
-            <th>字段</th>
-            <th>值</th>
-            <th>说明</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>角色名称</td>
-            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>权限级别</td>
-            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>授权操作</td>
-            <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
-    <a class="icon-cancel" ng-click="moduleClose('addRole')"><i class="icon ion-close"></i></a>
+
 </module-box>
 <module-box id="addRole2" class="aaaaaaaaaa">
     <div class="model-head t-align-center"><h3>添加角色222</h3></div>

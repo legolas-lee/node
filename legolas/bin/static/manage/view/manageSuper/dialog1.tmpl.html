@@ -1,0 +1,54 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>添加角色</h2>
+                <span flex></span>
+                <md-button ng-click="cancel()">close
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>字段</th>
+                        <th>值</th>
+                        <th>说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>角色名称</td>
+                        <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>权限级别</td>
+                        <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>授权操作</td>
+                        <td><input class="input-full no-border" type="text" placeholder="请输入内容"></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a class="icon-cancel" ng-click="moduleClose('addRole')"><i class="icon ion-close"></i></a>
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <span flex></span>
+            <md-button ng-click="answer('not useful')">
+                取消
+            </md-button>
+            <md-button ng-click="answer('useful')">
+                添加
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

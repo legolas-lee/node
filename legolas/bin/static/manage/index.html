@@ -67,12 +67,12 @@
         </div>
         <div class="page-row">
             <div class="page-header clearfix">
-                <a class="icons float-left icon-bind-nav" ng-click="togglePageClass('nav')"><i class="fa fa-bars"></i></a>
-                <a class="icons float-left icon-bind-footer" ng-click="togglePageClass('footbar')"><i class="fa fa-th-list"></i></a>
-                <a class="icons float-left icon-bind-serverinfo" ui-sref="manageExtraServer"><i class="fa fa-desktop"></i></a>
+                <a class="icons float-left icon-bind-nav" ng-click="togglePageClass('nav')"><i class="material-icons">menu</i></a>
+                <a class="icons float-left icon-bind-footer" ng-click="togglePageClass('footbar')"><i class="material-icons">vertical_align_bottom</i></a>
+                <a class="icons float-left icon-bind-serverinfo" ui-sref="manageExtraServer"><i class="material-icons">laptop_chromebook</i></a>
 
-                <a class="icons float-right icon-bind-message" ng-click="togglePageClass('notice')"><i class="fa fa-bell"></i><i class="dote-notice animate-flash"></i></a>
-                <a class="icons float-right icon-bind-user"  ui-sref="manageSuperAccountInfo({id:'0'})"><i class="fa fa-sliders-h"></i></a>
+                <a class="icons float-right icon-bind-message" ng-click="togglePageClass('notice')"><i class="material-icons animate-flash">textsms</i></a>
+                <a class="icons float-right icon-bind-user"  ui-sref="manageSuperAccountInfo({id:'0'})"><i class="material-icons">event_note</i></a>
                 <div class="user-info float-right">
                     <div class="admin-avatar">
                         <img ng-src="{{me.data.avatar}}">
