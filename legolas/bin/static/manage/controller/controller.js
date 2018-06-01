@@ -1,7 +1,7 @@
 /**
  * Created by kreta on 2018/5/19.
  */
-var app=angular.module('myApp',['ui.router','oc.lazyLoad','ionic']);
+var app=angular.module('myApp',['ui.router','oc.lazyLoad','ngMaterial']);
 var release=false //false为内网访问，true为外网访问
 function transUrl(url) {
     if(release){return 'http://kretaslee.asuscomm.com:3000/'+url;}

@@ -4,13 +4,6 @@
  * @license MIT
  * v1.1.9
  */
-html, body {
-  height: 100%;
-  position: relative; }
-
-body {
-  margin: 0;
-  padding: 0; }
 
 [tabindex='-1']:focus {
   outline: none; }

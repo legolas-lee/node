@@ -2,7 +2,7 @@
  * Created by kreta on 2018/5/23.
  */
 //超级管理-角色管理
-angular.module('myApp',['ionic']).controller('manageSuperRole',function ($scope,$http,$ionicModal) {
+angular.module('myApp',['ngMaterial']).controller('manageSuperRole',function ($scope,$http) {
     $scope.$emit('navState', {parrent:'manageSuper',current:'manageSuperRole'});
     function refreshList() {
         $http.get(transUrl('Accounts/getRoleList'),{params:{}})

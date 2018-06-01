@@ -1,29 +1,17 @@
-/*覆盖ionic样式*/
-html,body{ overflow: visible!important;}
-.button-small {padding: 2px 8px 1px;}
-html body * .item-input input{ border: 0!important;}
-html body * .row{ padding: 5px 0px;}
-html body * .row .col:first-child{ padding-left: 0;}
-html body * .row .col:last-child{ padding-right: 0;}
-html body * .item-input{padding: 6px 15px 5px 15px;}
-html body * .input-label{ width: 20%; min-width: 100px;}
-/*基于ionic的样式改进*/
-html body .navOn .modal-width-40{ width: 40%;top: 20%;left: 40%;min-height: 240px;}
-html body * span{ font-weight: normal;}
-html body * .bar{ height: 48px; margin-top:1px}
-.button{transition: background 0.2s linear 0s}
-.button-stable:hover{ background: #eaeaea;}
-.button-positive:hover{ background: #205bc0;}
-.button-calm:hover{ background: #098cb1;}
-.button-balanced:hover{ background: #1ba242;}
-.button-energized:hover{ background: #ff9600;}
-.button-assertive:hover{ background: #b12b21;}
-.button-royal:hover{ background: #5e44b4;}
-.button-dark:hover{ background: #333;}
-html body * textarea{padding: 6px 11px !important;}
+
+/*reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, menu, nav, output, ruby, section, summary,time, mark, audio, video hr,article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{margin:0;padding:0;border: 0;outline:0!important; font-size: 100%;  background:transparent;vertical-align: baseline;box-sizing:border-box; -moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ul{list-style:none;}
+:focus {outline: 0;}
+a{text-decoration: none; cursor: pointer;transition: all 0.3s ease-in-out;}
+table{border-collapse:collapse; border-spacing:0; }
+img{border:0;vertical-align:middle;-ms-interpolation-mode: bicubic; }
+hr {display:block;height:1px;border-top:1px solid #cccccc;margin:1em 0;}
+input,select,table{vertical-align:middle;}
 
 /*resource*/
-a{ text-decoration: none; cursor: pointer;}
 .text-overflow{white-space:nowrap; text-overflow:ellipsis;  overflow:hidden }
 .show{display:block;}
 .hide{display: none;}
@@ -250,6 +238,21 @@ input.input-full{ width: 100%;}
 .width-percent-98{width:98%!important;}
 .width-percent-99{width:99%!important;}
 .width-percent-100{width:100%!important;}
+
+/*button*/
+.btn{display: inline-block;padding: 8px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.5;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 2px;-webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;}
+.btn-default{color: #333; background-color: #fff; border-color: #ccc;}
+.btn-default:hover{color: #333; background-color: #e6e6e6; border-color: #adadad;}
+.btn-primary{color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+.btn-primary:hover{color: #fff; background-color: #286090; border-color: #204d74;}
+.btn-success{color: #fff; background-color: #5cb85c; border-color: #4cae4c}
+.btn-success:hover{color: #fff; background-color: #449d44; border-color: #398439;}
+.btn-info{color: #fff; background-color: #5bc0de; border-color: #46b8da;}
+.btn-info:hover{color: #fff; background-color: #31b0d5; border-color: #269abc;}
+.btn-warning{color: #fff; background-color: #f0ad4e; border-color: #eea236;}
+.btn-warning:hover{color: #fff; background-color: #ec971f; border-color: #d58512;}
+.btn-danger{color: #fff; background-color: #d9534f; border-color: #d43f3a;}
+.btn-danger:hover{color: #fff; background-color: #c9302c; border-color: #ac2925;}
 
 /*animate*/
 .css-animate{-webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;-webkit-animation-duration: 0.3s;animation-duration: 0.3s;}

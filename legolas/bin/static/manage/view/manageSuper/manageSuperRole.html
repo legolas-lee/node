@@ -1,26 +1,37 @@
-<div class="bar bar-header bar-light">
-    <button class="button button-icon icon ion-ios-arrow-back" ng-click="goBack()"></button>
-    <div class="title">角色管理</div>
-    <button ng-click="moduleOpen('addRole',50)"  class="button ion-plus module-btn"> 添加角色</button>
-</div>
-<div class="content has-header">
-<div class="row">
-    <div class="col" ng-repeat="item in roleList">
-        <div class="card-style-account">
-            <div class="float t-align-right"><a ng-click="delRole(item.ID)" class="light"><i class="fa fa-user-alt-slash"></i> 删除角色</a></div>
-            <span class="avatar"><i class="{{item.icon}}"></i></span>
-            <h3 ng-bind="item.name"></h3>
-            <span class="desc" ng-bind="item.describe"></span>
-            <ul>
-                <li class="text">包含用户：{{item.accounts}}</li>
-                <li class="text">授权操作: {{item.privilege}}</li>
-            </ul>
-            <div class="line"></div>
-            <div class="operate"><button class="button button-full button-stable ion-edit" ng-click="editRole(item.ID)"> 修改</button></div>
+<md-toolbar class="page-toobar">
+    <div layout="row">
+        <md-toolbar-filler layout="row" layout-align="center center">
+            <i class="fa fa-user-cog"></i>
+        </md-toolbar-filler>
+        <h2 class="md-toolbar-tools">
+            <a class="back"><i class="material-icons">face</i> </a><span>角色管理</span><small>/ account role management</small>
+        </h2>
+        <div class="buttons">
+            <button class="btn btn-success module-btn" ng-click="moduleOpen('addRole',50)"><i class="material-icons">add</i> 添加角色</button>
         </div>
     </div>
+</md-toolbar>
+<div class="padding-10">
+    <md-grid-list md-cols="{{roleList.length||4}}" md-gutter="10px" md-row-height="fit" style="height: 420px;">
+        <md-grid-tile ng-repeat="item in roleList">
+            <div class="card-style-account">
+                <div class="float t-align-right"><a ng-click="delRole(item.ID)" class="light"><i class="fa fa-user-alt-slash"></i> 删除角色</a></div>
+                <span class="avatar"><i class="{{item.icon}}"></i></span>
+                <h3 ng-bind="item.name"></h3>
+                <span class="desc" ng-bind="item.describe"></span>
+                <ul>
+                    <li class="text">包含用户：{{item.accounts}}</li>
+                    <li class="text">授权操作: {{item.privilege}}</li>
+                </ul>
+                <div class="line"></div>
+                <div class="operate"><md-button class="md-raised md-primary" ng-click="editRole(item.ID)">修改</md-button></div>
+            </div>
+        </md-grid-tile>
+    </md-grid-list>
 </div>
-</div>
+
+
+
 <module-box id="addRole">
     <div class="model-head t-align-center"><h3>添加角色111</h3></div>
     <table class="table">

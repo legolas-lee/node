@@ -2,7 +2,7 @@
  * Created by kreta on 2018/5/23.
  */
 //服务器信息
-angular.module('myApp',['ionic']).controller('manageExtraServer',function ($scope,$http,$interval) {
+angular.module('myApp',['']).controller('manageExtraServer',function ($scope,$http,$interval) {
     $scope.$emit('navState', {parrent:'manageSuper',current:'manageExtraServer'});
     var timer=$interval(function () {
         $http.get(transUrl('ExtraInfo/ServerInfo'),{params:{}})

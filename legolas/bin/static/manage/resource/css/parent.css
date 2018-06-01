@@ -1,7 +1,17 @@
-body{background: #e5e9ec;}
+body{background: #e5e9ec; height: 100%; font-size: 14px;}
 body::-webkit-scrollbar {
     display: none;
 }
+/*material覆盖*/
+.md-button{ box-shadow: none!important;}
+/*基于material的样式改良*/
+html body * .page-toobar{ background: white; color:#444; border-top:1px solid #7a7f8c}
+html body * .page-toobar md-toolbar-filler{ background: #7a7f8c;color: white;}
+html body * .page-toobar .buttons{ white-space: nowrap; padding-right:10px; padding-top: 12px;}
+html body * .page-toobar .md-toolbar-tools a{ font-size: 1.4em;}
+html body * .page-toobar .md-toolbar-tools small{ font-size: 0.6em; padding-left: 5px; text-transform:uppercase}
+
+
 /*复用样式*/
 .progress{height: 2px;background-color: rgba(0, 0, 0, 0.28); }
 .progress .progress-bar{height:2px;background-color: #0090D9;border-radius: 3px;width: 0;}
@@ -17,14 +27,14 @@ body::-webkit-scrollbar {
 .table{ border-top: 1px solid #ddd;border-right: 1px solid #ddd; width: 100%; font-size: 12px;}
 .table td,.table th{ border-left:1px solid #ddd;border-bottom:1px solid #ddd; padding:8px 10px; vertical-align: middle}
 .table th{ background: #eee;}
-.line{ display:block;width: 100%; height: 2px; background: transparent; overflow: hidden; font-size: 0; margin: 15px 0; border-bottom: 1px solid #ddd;}
+.line{ display:block;width: 100%; height: 2px; background: transparent; overflow: hidden; font-size: 0; margin: 10px 0; border-bottom: 1px solid #ddd;}
 
 /*页面布局*/
 main{width: 100%; height: 100%; position: relative;}
 .page-header{ height: 60px; position: fixed; top: 0; left: 250px;right:0; z-index: 999; }
 .page-left{ width: 250px;  position: fixed;  top:0; right:0; bottom:40px; left: 0; z-index: 999; }
 .page-row{  position: relative; margin-left:250px;}
-.page-main{ margin-top: 60px; margin-right: 250px; margin-left: 0px; margin-bottom: 40px; padding:10px;}
+.page-main{ margin-top: 60px; margin-right: 250px; margin-left: 0px; margin-bottom: 40px;}
 .noticeOn.noticeWidth-normal .page-main{margin-right: 250px;}
 .noticeOn.noticeWidth-wide .page-main{margin-right: 350px;}
 .noticeOn.noticeWidth-maxwide .page-main{margin-right: 700px;}
@@ -107,10 +117,12 @@ main{width: 100%; height: 100%; position: relative;}
 .module-content .icon-cancel{ display: block; position: absolute; top: 15px; right: 15px; width: 20px; height: 20px; border-radius: 20px; background: white; line-height: 20px; text-align: center; background: #999; color: white; font-size: 12px;}
 
 /*角色卡片*/
-.card-style-account{ padding: 20px; background: white;background:linear-gradient(#0aa699 32%, white 10%);}
-.card-style-account .avatar{ display: block; width: 80px; height: 80px; border-radius: 80px; margin: 60px 20px 20px; background: #0090d9; line-height: 80px; text-align: center; color: white; font-size: 2.5em; border: 3px solid white; overflow: hidden;}
+.card-style-account{width: 100%; height: 100%; padding: 20px; background: white;background:linear-gradient(#5cb85c 32%, white 10%);}
+.card-style-account .float a{ color: white;}
+.card-style-account .avatar{ display: block; width: 80px; height: 80px; border-radius: 80px; margin: 60px 20px 20px; background: rgb(63,81,181);; line-height: 80px; text-align: center; color: white; font-size: 2em; border: 3px solid white; overflow: hidden;}
 .card-style-account img{ width: 80px; height: 80px; border-radius: 80px;}
-.card-style-account .desc{ color: #999;}
+.card-style-account h3{ font-size: 16px; font-weight: normal;}
+.card-style-account .desc{ color: #999; font-size: 12px;}
 .card-style-account ul{ padding: 15px 0;}
 .card-style-account ul li{ line-height: 2em;}
 .card-style-account .operate{ text-align: center;}

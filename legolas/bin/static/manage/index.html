@@ -8,13 +8,19 @@
       <meta content="Build with NodeJS and AngularJS" name="description" />
       <meta content="LeGolas" name="author" />
       <script src="resource/plugin/jquery/jquery-2.1.1.js"></script>
-      <script src="resource/plugin/ionic/js/ionic.bundle.js"></script>
+      <script src="resource/plugin/angular/angular.js"></script>
+      <script src="resource/plugin/angular/angular-animate.js"></script>
+      <script src="resource/plugin/angular/angular-aria.js"></script>
+      <script src="resource/plugin/angular/angular-messages.js"></script>
+      <script src="resource/plugin/angular-material/angular-material.js"></script>
       <script src="resource/plugin/angular-ui-router/angular-ui-router.min.js"></script>
       <script src="resource/plugin/ocLazyLoad/ocLazyLoad.min.js"></script>
       <script src="resource/plugin/socket.io/socket.io.js"></script>
-      <link rel="stylesheet" href="resource/plugin/ionic/css/ionic.min.css">
+      <link rel="stylesheet" href="resource/plugin/angular-material/angular-material.css">
       <link rel="stylesheet" href="resource/css/public.css">
       <link rel="stylesheet" href="resource/css/parent.css">
+      <link rel="stylesheet" href="resource/plugin/iconfont/material-icons.css">
+
   </head>
   <body ng-controller="parent"  ng-class="pageClass">
     <main>
@@ -73,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="page-main" style="min-height:{{widowInfo.height-60-40}}px" ui-view></div>
+            <div class="page-main" style="min-height:{{widowInfo.height-60-40}}px" ui-view ng-cloak></div>
             <div class="page-right scrollbar">
                 <div class="padding-10">
                     <div class="infoBox scrollbar">

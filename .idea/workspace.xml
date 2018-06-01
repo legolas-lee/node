@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9c44b652-fd69-4b2a-8a63-f3d8cc1ac076" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageExtraServer.js" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageExtraServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/index.html" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/view/manageContent/manageContentList.html" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/view/manageContent/manageContentList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperAccount.html" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperAccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/angular-material/angular-material.css" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/angular-material/angular-material.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html" afterPath="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/legolas/routes/ExtraInfo.js" afterPath="$PROJECT_DIR$/legolas/routes/ExtraInfo.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,22 +28,12 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5625">
-              <caret line="353" column="22" lean-forward="false" selection-start-line="353" selection-start-column="22" selection-end-line="353" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding>
-                <element signature="e#2143#6694#0" expanded="false" />
-                <marker date="1527770589308" expanded="true" signature="1945:1957" ph="..." />
+                <element signature="e#2148#6699#0" expanded="false" />
+                <marker date="1527844557518" expanded="true" signature="1950:1962" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
-              <caret line="75" column="77" lean-forward="false" selection-start-line="75" selection-start-column="77" selection-end-line="75" selection-end-column="77" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -50,8 +41,8 @@
       <file leaf-file-name="public.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="418">
+              <caret line="247" column="51" lean-forward="false" selection-start-line="247" selection-start-column="45" selection-end-line="247" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -60,19 +51,31 @@
       <file leaf-file-name="parent.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+            <state relative-caret-position="924">
+              <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExtraInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/legolas/routes/ExtraInfo.js">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,53 +83,40 @@
       <file leaf-file-name="manageSuperRole.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manageContentList.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageContent/manageContentList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1131">
-              <caret line="73" column="41" lean-forward="false" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+            <state relative-caret-position="110">
+              <caret line="9" column="129" lean-forward="false" selection-start-line="9" selection-start-column="125" selection-end-line="9" selection-end-column="129" />
               <folding>
-                <element signature="n#table#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manageSuperAccount.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperAccount.html">
+      <file leaf-file-name="material-icons.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/iconfont/material-icons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="117" column="35" lean-forward="true" selection-start-line="116" selection-start-column="8" selection-end-line="117" selection-end-column="35" />
-              <folding>
-                <element signature="n#module-box#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manageSuperAccount.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperAccount.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1925">
-              <caret line="77" column="23" lean-forward="false" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            <state relative-caret-position="770">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Accounts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/legolas/routes/Accounts.js">
+      <file leaf-file-name="manageSuperRole.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1475">
-              <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="88">
+              <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-material.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/angular-material/angular-material.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,6 +134,8 @@
       <find>hr</find>
       <find>&lt;label class=&quot;item item-input item-stacked-label&quot;&gt;</find>
       <find>closeall</find>
+      <find>ionic</find>
+      <find>btn-primary</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;label class=&quot;item item-input item-stacked-label b-l-0 b-r-0&quot;&gt;</replace>
@@ -159,18 +151,20 @@
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/ionic/css/ionic.css" />
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageExtraServer.html" />
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/animate.css" />
-        <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js" />
-        <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageExtraServer.js" />
         <option value="$PROJECT_DIR$/legolas/routes/Accounts.js" />
-        <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js" />
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperAccount.js" />
         <option value="$PROJECT_DIR$/legolas/routes/ExtraInfo.js" />
-        <option value="$PROJECT_DIR$/legolas/bin/static/manage/index.html" />
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperAccount.html" />
-        <option value="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html" />
-        <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css" />
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/view/manageContent/manageContentList.html" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageExtraServer.js" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/angular-material/angular-material.css" />
         <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/index.html" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html" />
+        <option value="$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/iconfont/material-icons.css" />
       </list>
     </option>
   </component>
@@ -184,10 +178,10 @@
     <handled-path value="$PROJECT_DIR$/legolas/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-1088" />
+    <option name="y" value="-596" />
+    <option name="width" value="1096" />
+    <option name="height" value="1906" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="添加" />
@@ -207,7 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,40 +365,6 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manageContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legolas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -474,7 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
+              <option name="myItemId" value="iconfont" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,87 +472,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legolas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legolas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
+              <option name="myItemId" value="angular-material" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -692,7 +572,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -794,6 +674,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9c44b652-fd69-4b2a-8a63-f3d8cc1ac076" name="默认的" comment="" />
@@ -808,24 +691,25 @@
       <workItem from="1527736600617" duration="13828000" />
       <workItem from="1527761861759" duration="12199000" />
       <workItem from="1527826984510" duration="5848000" />
+      <workItem from="1527843072216" duration="15334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82471000" />
+    <option name="totallyTimeSpent" value="97836000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-1088" y="-596" width="1096" height="1906" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20706007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20699432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12982832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12979683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -851,85 +735,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperAccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding>
-            <element signature="n#module-box#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/routes/Accounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="102" column="54" lean-forward="true" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="79" lean-forward="false" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="94" column="81" lean-forward="false" selection-start-line="94" selection-start-column="81" selection-end-line="94" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4950">
-          <caret line="225" column="39" lean-forward="false" selection-start-line="225" selection-start-column="39" selection-end-line="225" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="75" column="47" lean-forward="false" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,8 +761,8 @@
         <state relative-caret-position="3740">
           <caret line="389" column="42" lean-forward="true" selection-start-line="389" selection-start-column="4" selection-end-line="389" selection-end-column="42" />
           <folding>
-            <element signature="e#2143#6694#0" expanded="false" />
-            <marker date="1527770589308" expanded="true" signature="1945:1957" ph="..." />
+            <element signature="e#2148#6699#0" expanded="false" />
+            <marker date="1527844557518" expanded="true" signature="1950:1962" ph="..." />
           </folding>
         </state>
       </provider>
@@ -971,8 +780,8 @@
         <state relative-caret-position="704">
           <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
           <folding>
-            <element signature="e#2143#6694#0" expanded="false" />
-            <marker date="1527770589308" expanded="true" signature="1945:1957" ph="..." />
+            <element signature="e#2148#6699#0" expanded="false" />
+            <marker date="1527844557518" expanded="true" signature="1950:1962" ph="..." />
           </folding>
         </state>
       </provider>
@@ -981,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
           <caret line="44" column="68" lean-forward="true" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
           <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,8 +880,8 @@
         <state relative-caret-position="650">
           <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
-            <element signature="e#2143#6694#0" expanded="false" />
-            <marker date="1527770589308" expanded="true" signature="1945:1957" ph="..." />
+            <element signature="e#2148#6699#0" expanded="false" />
+            <marker date="1527844557518" expanded="true" signature="1950:1962" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1141,7 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="14837" column="25" lean-forward="false" selection-start-line="14837" selection-start-column="19" selection-end-line="14837" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,45 +963,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageExtraServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/legolas/routes/Accounts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="1254">
+          <caret line="57" column="62" lean-forward="false" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperAccount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="77" column="23" lean-forward="false" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5625">
-          <caret line="353" column="22" lean-forward="false" selection-start-line="353" selection-start-column="22" selection-end-line="353" selection-end-column="22" />
-          <folding>
-            <element signature="e#2143#6694#0" expanded="false" />
-            <marker date="1527770589308" expanded="true" signature="1945:1957" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,48 +975,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperAccount.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="117" column="35" lean-forward="true" selection-start-line="116" selection-start-column="8" selection-end-line="117" selection-end-column="35" />
-          <folding>
-            <element signature="n#module-box#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="75" column="77" lean-forward="false" selection-start-line="75" selection-start-column="77" selection-end-line="75" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="264">
+          <caret line="12" column="88" lean-forward="false" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
           <folding />
         </state>
       </provider>
@@ -1255,10 +990,149 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1131">
           <caret line="73" column="41" lean-forward="false" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperDatabase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperColumn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageContentList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageContentBackup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageExtraServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperAccount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="77" column="23" lean-forward="false" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperAccountInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/manageSuperRole.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/angular-material/angular-material.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/DataSync/Project/2017/mrray.com/Jiwei-ver1.2/resource/plugin/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="3069" column="20" lean-forward="false" selection-start-line="3058" selection-start-column="0" selection-end-line="3399" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/controller/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding>
-            <element signature="n#table#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#!!top" expanded="false" />
+            <element signature="e#2148#6699#0" expanded="false" />
+            <marker date="1527844557518" expanded="true" signature="1950:1962" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="247" column="51" lean-forward="false" selection-start-line="247" selection-start-column="45" selection-end-line="247" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/css/parent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/view/manageSuper/manageSuperRole.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="9" column="129" lean-forward="false" selection-start-line="9" selection-start-column="125" selection-end-line="9" selection-end-column="129" />
+          <folding>
+            <element signature="n#style#0;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/legolas/bin/static/manage/resource/plugin/iconfont/material-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
